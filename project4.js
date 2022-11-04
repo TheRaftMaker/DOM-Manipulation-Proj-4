@@ -64,6 +64,10 @@ startStopBtn.addEventListener('click', function(){
 
 resetBtn.addEventListener('click', function() {
 
+    window.clearInterval(timerInterval)
+    document.getElementById('startStopBtn').innerHTML = '<i class="fa-solid fa-play" id="play"></i>';
+    timerStatus = "stopped";
+    
     seconds = 0;
     minutes = 0;
     hours = 0;
